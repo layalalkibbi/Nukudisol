@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../images/favicon.ico">
+
+    <title>Nukudi</title>
+  
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="../src/css/vendors_css.css">
+	  
+	<!-- Style-->    
+	<link rel="stylesheet" href="../src/css/horizontal-menu.css"> 
+	<link rel="stylesheet" href="../src/css/style.css">
+	<link rel="stylesheet" href="../src/css/skin_color.css">
+
+</head>
+
+<body class="layout-top-nav dark-skin theme-primary fixed ltr">
+	
+<div class="wrapper">
+	<div id="loader"></div>
+
+  <header class="main-header">
+	  <div class="inside-header">
+		<div class="d-flex align-items-center logo-box justify-content-start">
+			<!-- Logo -->
+			<a href="index.html" class="logo">
+			  <!-- logo-->
+			  <div class="logo-lg">
+				  <span class="light-logo"><img src="../../../images/default.png" alt="logo"></span>
+				  <span class="dark-logo"><img src="../../../images/default.png" alt="logo"></span>
+			  </div>
+			</a>	
+		</div>  
+		<!-- Header Navbar -->
+		<nav class="navbar navbar-static-top">
+		  <!-- Sidebar toggle button-->
+		  <div class="app-menu">
+			<ul class="header-megamenu nav">
+				<li class="btn-group d-md-inline-flex d-none">
+					<div class="app-menu">
+						<div class="search-bx mx-5">
+							<form>
+								<div class="input-group">
+								  <input type="search" class="form-control" placeholder="Search">
+								  <div class="input-group-append">
+									<button class="btn" type="submit" id="button-addon3"><i class="icon-Search"><span class="path1"></span><span class="path2"></span></i></button>
+								  </div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</li>
+			</ul> 
+		  </div>
+
+		  <div class="navbar-custom-menu r-side">
+			<ul class="nav navbar-nav">
+				<li class="btn-group d-md-inline-flex d-none">
+						  <label class="switch">
+							  <span class="waves-effect skin-toggle waves-light">
+									<input type="checkbox" data-mainsidebarskin="toggle" id="toggle_left_sidebar_skin">
+									<span class="switch-on"><i data-feather="moon"></i></span>
+									<span class="switch-off"><i data-feather="sun"></i></span>
+								</span>
+							</label>
+            </li>
+				<!--<li class="dropdown notifications-menu btn-group ">
+				<a href="#" class="waves-effect waves-light btn-primary-light svg-bt-icon" data-bs-toggle="dropdown" title="Notifications">
+					<i data-feather="bell"></i>
+					<div class="pulse-wave"></div>
+			    </a>
+				<ul class="dropdown-menu animated bounceIn">
+				  <li class="header">
+					<div class="p-20">
+						<div class="flexbox">
+							<div>
+								<h4 class="mb-0 mt-0">Notifications</h4>
+							</div>
+							<div>
+								<a href="#" class="text-danger">Clear All</a>
+							</div>
+						</div>
+					</div>
+				  </li>
+				  <li>
+					<-- inner menu: contains the actual data -/-
+					<ul class="menu sm-scrol">
+					  <li>
+						<a href="#">
+						  <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
+						</a>
+					  </li>
+					  <li>
+						<a href="#">
+						  <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
+						</a>
+					  </li>
+					  <li>
+						<a href="#">
+						  <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
+						</a>
+					  </li>
+					  <li>
+						<a href="#">
+						  <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et nisi
+						</a>
+					  </li>
+					  <li>
+						<a href="#">
+						  <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero dictum fermentum.
+						</a>
+					  </li>
+					  <li>
+						<a href="#">
+						  <i class="fa fa-user text-primary"></i> Nunc fringilla lorem 
+						</a>
+					  </li>
+					  <li>
+						<a href="#">
+						  <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
+						</a>
+					  </li>
+					</ul>
+				  </li>
+				  <li class="footer">
+					  <a href="#">View all</a>
+				  </li>
+				</ul>
+			</li>
+			<li class="btn-group nav-item d-xl-inline-flex d-none">
+				<a href="#" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon" title="" id="live-chat">
+					<i data-feather="message-circle"></i>
+			    </a>
+			</li>--> 
+
+				<li class="btn-group d-xl-inline-flex d-none">
+					<a href="#" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon dropdown-toggle" data-bs-toggle="dropdown">
+						<img class="rounded-circle" src="../../../images/svg-icon/usa.svg" alt="">
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item my-5" href="#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/usa.svg" alt=""> English</a>
+						<a class="dropdown-item my-5" href="#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/spain.svg" alt=""> Spanish</a>
+						<a class="dropdown-item my-5" href="#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/ger.svg" alt=""> German</a>
+						<a class="dropdown-item my-5" href="#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/jap.svg" alt=""> Japanese</a>
+						<a class="dropdown-item my-5" href="#"><img class="w-20 rounded me-10" src="../../../images/svg-icon/fra.svg" alt=""> French</a>
+					</div>
+				</li>
+
+				<li class="btn-group nav-item d-xl-inline-flex d-none">
+					<a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon" title="Full Screen">
+						<i data-feather="maximize"></i>
+					</a>
+				</li>						  
+			    <!-- Control Sidebar Toggle Button -->
+			    <li class="btn-group nav-item d-xl-inline-flex d-none">
+				  <a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon">
+					<i data-feather="sliders"></i>
+				  </a>
+			    </li>
+
+				<!-- User Account-->
+				<li class="dropdown user user-menu">
+					<a href="#" class="waves-effect waves-light dropdown-toggle w-auto l-h-12 bg-transparent p-0 no-shadow" title="User" data-bs-toggle="modal" data-bs-target="#quick_user_toggle">
+						<img src="../../../images/avatar/avatar-13.png" class="avatar rounded bg-primary-light h-40 w-40" alt="">
+					</a>
+				</li>
+
+			</ul>
+		  </div>
+		</nav>
+	  </div>
+  </header>
+  <nav class="main-nav" role="navigation">
+
+	<!-- Mobile menu toggle button (hamburger/x icon) -->
+	<input id="main-menu-state" type="checkbox" />
+	<label class="main-menu-btn" for="main-menu-state">
+	  <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+	</label>
+
+	<!-- Sample menu definition -->
+	<ul id="main-menu" class="sm sm-blue sm-ltr">		
+		<li><a href="widgets_social.html"><i data-feather="home"></i>Home</a></li>
+
+	  <li><a href="index.html"><i data-feather="user"></i>Investor Dashboard</a></li>
+
+	  <li><a href="startup_dashboard.html"><i data-feather="fast-forward"></i>Startup Dashboard</a></li>
+
+	  <li><a href="Startups.html"><i data-feather="fast-forward"></i> Startups</a></li>
+	  
+	  <li><a href="Investors.html"><i data-feather="briefcase"></i> Investors</a></li>
+
+	  <li><a href="contacts.html"><i data-feather="mail"></i> Contacts</a></li>
+	  <li><a href="funding-rounds.html"><i data-feather="mail"></i> Funding Rounds</a></li>
+
+
+	  <!--<li><a href="invest.html"><i data-feather="home"></i>Invest</a></li>
+	  <li><a href="holding.html"><i data-feather="home"></i>Holding</a></li>	
+	  <li><a href="#"><i data-feather="file-plus"></i>Staff Data</a>
+		  <ul>
+			  <li><a href="contact_userlist_grid.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Staff Members</a></li>				
+			  <li><a href="extra_profile.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Profile</a></li>	
+			  <li><a href="billing.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Billing</a></li>	
+		  </ul>
+	  </li>-->
+
+
+	</ul>
+  </nav>
+  
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	  <div class="container-full">
+		<!-- Content Header (Page header) -->
+		<div class="content-header">
+			<div class="d-flex align-items-center">
+				<div class="me-auto">
+					
+						</nav>
+					</div>
+				
+				
+			</div>
+		</div>
+
+		<!-- Main content -->
+		<section class="content">
+		  <div class="row">
+			  
+			<div class="col-12">
+				<div class="box">
+				<div class="box-header with-border">
+				  <h4 class="box-title">Startups</h4>
+				</div>
+				<!-- /.box-header -->
+				<div class="box-body">
+					<div class="table-responsive">
+					  <table id="example" class="table text-fade table-bordered table-hover display nowrap margin-top-10 w-p100">
+						<thead>
+							<tr class="text-dark">
+								<th>Startup</th>
+                                <th>Funding Type</th>
+								<th>Money Raised</th>
+								<th> Announced Date</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-dark">Anghami</td>
+								<td>series D</td>
+								<td>$50,000</td>
+                                <td>May 2,2022</td>
+
+							</tr>
+							<tr>
+								<td class="text-dark">Toters</td>
+								<td>Series A</td>
+								<td>$15,000</td>
+                                <td>April 2,2022</td>
+								
+							</tr>
+                            <tr>
+								<td class="text-dark">NokNok</td>
+								<td>Seed</td>
+								<td>$5,000</td>
+                                <td>April 29,2022</td>
+								
+							</tr>
+							
+				
+						</tbody>	
+					</table>
+					</div>              
+				</div>
+				<!-- /.box-body -->
+			  </div>
+			  <!-- /.box -->
+			  
+			
+			</div>
+
+  <!-- /.control-sidebar -->
+  
+  <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>     
+  
+  
+</div>
+<!-- ./wrapper -->
+	
+	
+	
+	<div id="chat-box-body">
+		<div id="chat-circle" class="waves-effect waves-circle btn btn-circle btn-sm btn-warning l-h-50">
+            <div id="chat-overlay"></div>
+            <span class="icon-Group-chat fs-18"><span class="path1"></span><span class="path2"></span></span>
+		</div>
+
+		<div class="chat-box">
+            <div class="chat-box-header p-15 d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="waves-effect waves-circle btn btn-circle btn-primary-light h-40 w-40 rounded-circle l-h-45" type="button" data-bs-toggle="dropdown">
+                      <span class="icon-Add-user fs-22"><span class="path1"></span><span class="path2"></span></span>
+                  </button>
+                  <div class="dropdown-menu min-w-200">
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Color me-15"></span>
+                        New Group</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Clipboard me-15"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        Contacts</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Group me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Groups</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Active-call me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Calls</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Settings1 me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Settings</a>
+                    <div class="dropdown-divider"></div>
+					<a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Question-circle me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Help</a>
+					<a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Notifications me-15"><span class="path1"></span><span class="path2"></span></span> 
+                        Privacy</a>
+                  </div>
+                </div>
+                <div class="text-center flex-grow-1">
+                    <div class="text-dark fs-18">Mayra Sibley</div>
+                    <div>
+                        <span class="badge badge-sm badge-dot badge-primary"></span>
+                        <span class="text-muted fs-12">Active</span>
+                    </div>
+                </div>
+                <div class="chat-box-toggle">
+                    <button id="chat-box-toggle" class="waves-effect waves-circle btn btn-circle btn-danger-light h-40 w-40 rounded-circle l-h-45" type="button">
+                      <span class="icon-Close fs-22"><span class="path1"></span><span class="path2"></span></span>
+                    </button>                    
+                </div>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">   
+                </div>
+                <div class="chat-logs">
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="../../../images/avatar/2.jpg" class="avatar avatar-lg">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">2 Hours</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Hi there, I'm Jesse and you?
+                        </div>
+                    </div>
+                    <div class="chat-msg self">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">You</a>
+                                <p class="text-muted fs-12 mb-0">3 minutes</p>
+                            </div>
+                            <span class="msg-avatar">
+                                <img src="../../../images/avatar/3.jpg" class="avatar avatar-lg">
+                            </span>
+                        </div>
+                        <div class="cm-msg-text">
+                           My name is Anne Clarc.         
+                        </div>        
+                    </div>
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="../../../images/avatar/2.jpg" class="avatar avatar-lg">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">40 seconds</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Nice to meet you Anne.<br>How can i help you?
+                        </div>
+                    </div>
+                </div><!--chat-log -->
+            </div>
+            <div class="chat-input">      
+                <form>
+                    <input type="text" id="chat-input" placeholder="Send a message..."/>
+                    <button type="submit" class="chat-submit" id="chat-submit">
+                        <span class="icon-Send fs-22"></span>
+                    </button>
+                </form>      
+            </div>
+		</div>
+	</div>
+	
+	<!-- Page Content overlay -->
+	
+	
+	<!-- Vendor JS -->
+	<script src="../src/js/vendors.min.js"></script>
+	<script src="../src/js/pages/chat-popup.js"></script>
+    <script src="../../../assets/icons/feather-icons/feather.min.js"></script>	
+	<script src="../../../assets/vendor_components/datatable/datatables.min.js"></script>
+	
+	<!-- InvestX App -->
+	<script src="../src/js/demo.js"></script>
+	<script src="../src/js/jquery.smartmenus.js"></script>
+	<script src="../src/js/menus.js"></script>
+	<script src="../src/js/template.js"></script>
+	
+	<script src="../src/js/pages/data-table.js"></script>
+	
+
+</body>
+</html>
